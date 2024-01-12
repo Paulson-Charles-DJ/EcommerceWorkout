@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+</head>
+<style>
+    body{
+        margin: 0%;
+    }
+    .header{
+        width: 100%;
+        height: 62px;
+        background-color:#282929;
+    }
+    .img_header{
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    .header_left{
+        background-color: #282929;
+        width: 300px;
+        height: 30px;
+        padding-top: 19px;
+        padding-left: 3px;
+        float: left;
+    }
+    .header_button{
+        width: 90px;
+    height: 36px;
+    margin-left: 1377px;
+    margin-top: -38px;
+    background-color: #8dd44e;
+    float: left;
+    border: 2px;
+    border-radius: 5px;
+    color: white;
+    }
+    .header1{
+        width: 100%;
+        height: 100px;
+        background-color: none;
+    }
+    .header1_left{
+        float: left;
+        background-color: none;
+        width: 50%;
+        height: 100px;
+        padding-left: 20px;
+        padding-top: 2px;
+    }
+    .header1_right{
+        float: left;
+        width: 40%;
+        height: 100px;
+        background-color: none;
+        padding-left: 20px;
+    }
+    .header1_right_links{
+        padding-left: 25px;
+        padding-top: 38px;
+    }
+    .header1_atag{
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+    }
+    .header1_atag:hover{
+        color: grey;
+    }
+    .page1_body{
+        width: 100%;
+        height: 400px;
+        background-color: #ebebe3;
+    }
+    .page1_h1{
+        text-align: center;
+        font-family: "Dosis",sans-serif;
+        letter-spacing: 1px;
+        font-size: 35px;
+        font-weight: lighter;
+        margin-left: -35px;
+        padding-top: 120px;
+        color: rgb(83, 82, 82);
+    }
+    .body_button1{
+        background-color: black;
+        color: white;
+        width: 170px;
+        height: 45px;
+        margin-left: 580px;
+        margin-top: 25px;
+    }
+    .body_button2{
+        background-color: black;
+        color: white;
+        width: 170px;
+        height: 45px;
+        margin-left: 10px;
+    }
+    .body_button1:hover{
+        background-color: transparent;
+        color: black;
+    }
+    .body_button2:hover{
+        background-color: transparent;
+        color: black;
+    }
+    .page2{
+        width: 100%;
+        height: 360px;
+        background-color: none;
+    }
+    .page2_orange{
+        float: left;
+        width: 240px;
+        height: 165px;
+        background-color: #f56353;
+        margin-left: 170px;
+        margin-top: 85px;
+        border-radius: 5px;
+    }
+    .page2_num{
+        color: white; 
+        font-size: 50px;
+        font-weight: lighter;
+        text-align: center;
+    }
+    .page2_txt{
+        color: white;
+        font-size: 20px;
+        font-weight: lighter;
+        text-align: center;
+        margin-top: -40px;
+    }
+    .page2_violet{
+        float: left;
+        width: 240px;
+        height: 165px;
+        background-color: rgb(159, 78, 159);
+        margin-left: 65px;
+        margin-top: 85px;
+        border-radius: 5px;
+    }
+    .page2_green{
+        float: left;
+        width: 240px;
+        height: 165px;
+        background-color: rgb(88, 204, 183);
+        margin-left: 65px;
+        margin-top: 85px;
+        border-radius: 5px;
+    }
+    .page2_blue{
+        float: left;
+        width: 240px;
+        height: 165px;
+        background-color: rgb(57, 145, 212);
+        margin-left: 65px;
+        margin-top: 85px;
+        border-radius: 5px;
+    }
+    .page3{
+        width: 100%;
+        height: 630px;
+        background-color: #f8f8f5;
+    }
+    .page3_head{
+        text-align: center;
+        font-family: "Dosis",sans-serif;
+        letter-spacing: 1px;
+        font-size: 25px;
+        font-weight: 540;
+        color: rgb(83, 82, 82);
+        padding-top: 90px;
+    }
+    hr{
+        width: 100px;
+        margin-top: -32px;
+    }
+    .home1{
+        float: left;
+        width: 365px;
+        height: 360px;
+        background-color: black;
+        margin-left: 140px;
+        margin-top: 60px;
+    }
+    .img_home1{
+        width: 365px;
+        height: 360px;
+    }
+    .img_home1:hover{
+        opacity: 0.2;
+    }
+    .home2{
+        float: left;
+        width: 365px;
+        height: 360px;
+        background-color: black;
+        margin-left: 42px;
+        margin-top: 60px;
+    }
+    .img_home2{
+        width: 365px;
+        height: 360px;
+    }
+    .img_home2:hover{
+        opacity: 0.2;
+    }
+    .page4{
+        width: 100%;
+        height: 1100px;
+        background-color: #f8f8f5;
+        margin-top: -20px;
+    }
+    .page5{
+        width: 100%;
+        height: 460px;
+        background-color: white;
+    }
+    .page5_subhead{
+        color: rgb(83, 82, 82);
+        margin-left: 505px;
+        margin-top: -15px;
+        margin-bottom: 25px;
+        font-size: 15px;
+        font-family: "Lato",sans-serif;
+        font-weight: lighter;
+    }
+    li{
+        list-style-type: none;
+        line-height: 35px;
+        font-family: "Doris",sans-serif;
+    }
+    li::before{
+        content: "➞ ";
+    }
+    .column1{
+        float: left;
+        width: 380px;
+        height: 170px;
+        /* background-color: #f56353; */
+        margin-left: 120px;
+        margin-top: 65px;
+    }
+    .column2{
+        float: left;
+        width: 380px;
+        height: 170px;
+        /* background-color: #f56353; */
+        margin-left: 60px;
+        margin-top: 65px;
+    }
+    .column3{
+        float: left;
+        width: 380px;
+        height: 170px;
+        /* background-color: #f56353; */
+        margin-left: 60px;
+        margin-top: 65px;
+    }
+    .page6{
+        width: 100%;
+        height: 450px;
+        background-color: aqua;
+    }
+    .page6_top{
+        width: 100%;
+        height: 380px;
+        background-color: #f8f8f5;
+    }
+    .img_headphone{
+        width: 170px;
+        height: 140px;
+        margin-left: 650px;
+        margin-top: 10px;
+    }
+    .page6_content{
+        width: 100%;
+        height: 250px;
+        background-color: #f8f8f5;
+    }
+    .page6_head{
+        text-align: center;
+        font-family: "Dosis",sans-serif;
+        letter-spacing: 1px;
+        font-size: 25px;
+        font-weight: 540;
+        color: rgb(83, 82, 82);
+    }
+    .page6_subhead{
+        color: rgb(83, 82, 82);
+        margin-left: 405px;
+        margin-top: -15px;
+        margin-bottom: 25px;
+        font-size: 15px;
+        font-family: "Lato",sans-serif;
+        font-weight: lighter;
+    }
+    .page6_button{
+        background-color: #f56353;
+        color: white;
+        width: 150px;
+        height: 40px;
+        margin-left: 663px;
+        margin-top: -10px;
+        border-radius: 5px;
+        border: #f8f8f5;
+    }
+    .page6_bottom{
+        width: 100%;
+        height: 70px;
+        background-color: black;
+    }
+    .bottom{
+        color: white;
+        font-size: medium;
+        font-weight: lighter;
+        text-align: center;
+        padding-top: 20px;
+    }
+</style>
+<body>
+    <div class="header">
+       <div class="header_left">
+            <img src="envato-market-crop1.jpg" width="174px" height="22px">
+       </div>
+       <div>
+            <button class="header_button">Buy now</button>
+       </div>
+    </div>
+    <div class="header1">
+        <div class="header1_left"><img style=" margin-left: 127px; margin-top: 12px;" src="orienko1.jpg" ></div>
+        <div class="header1_right">
+            <table>
+                <thead>
+                    <tr>
+                        <td class="header1_right_links"><a class="header1_atag" href="https://preview.themeforest.net/item/orienko-digital-ecommerce-template/full_screen_preview/19696245" target="blank">HOME</a></td>
+                        <td class="header1_right_links"><a class="header1_atag" href="">SHOP</a></td>
+                        <td class="header1_right_links"><a class="header1_atag" href="">BLOG</a></td>
+                        <td class="header1_right_links"><a class="header1_atag" href="">PORTFOLIO</a></td>
+                        <td class="header1_right_links"><a class="header1_atag" href="">OTHERS</a></td>
+                        <td class="header1_right_links"><a class="header1_atag" href="">CONTACT US</a></td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <div class="page1_body">
+        <h1 class="page1_h1">ORIENKO RESPONSIVE ECOMMERCE FASHION TEMPLATE</h1>
+        <button class="body_button1">VIEW ALL DEMO</button>
+        <button class="body_button2">BUY NOW</button>
+    </div>
+    <div class="page2">
+        <div class="page2_orange">
+            <h1 Class="page2_num">40+</h1><br>
+            <h2 class="page2_txt">TOTAL PAGES</h2>
+        </div>
+        <div class="page2_violet">
+            <h1 Class="page2_num">3+</h1><br>
+            <h2 class="page2_txt">HOME STYLE</h2>
+        </div>
+        <div class="page2_green">
+            <h1 Class="page2_num">17+</h1><br>
+            <h2 class="page2_txt">BLOG STYLE</h2>
+        </div>
+        <div class="page2_blue">
+            <h1 Class="page2_num">5+</h1><br>
+            <h2 class="page2_txt">PORTFOLIO STYLE</h2>
+        </div>
+    </div>
+    <div class="page3">
+        <h1 class="page3_head">3 UNIQUE HOME PAGE LAYOUTS</h1><br><hr>
+        <section>
+            <div class="home1">
+                <a href=""><img class="img_home1" src="home1.jpg"></a>
+            </div>
+            <div class="home2">
+                <a href=""><img class="img_home2" src="home2.jpg"></a>
+            </div>
+            <div class="home2">
+                <a href=""><img class="img_home2" src="home3.jpg"></a>
+            </div>
+        </section>
+    </div>
+    <div class="page4">
+        <section>
+            <h1 class="page3_head">SHOP PAGE LAYOUTS</h1><br><hr>
+            <div class="home1">
+                <a href=""><img class="img_home1" src="shop-width1.jpg"></a>
+            </div>
+            <div class="home2">
+                <a href=""><img class="img_home2" src="shop-width2.jpg"></a>
+            </div>
+            <div class="home2">
+                <a href=""><img class="img_home2" src="sidebar1.jpg"></a>
+            </div>
+            <div class="home1">
+                <a href=""><img class="img_home1" src="sidebar2.jpg"></a>
+            </div>
+            <div class="home2">
+                <a href=""><img class="img_home2" src="sidebarleft1.jpg"></a>
+            </div>
+            <div class="home2">
+                <a href=""><img class="img_home2" src="sidebarleft2.jpg"></a>
+            </div>
+        </section>
+    </div>
+    <div class="page5">
+        <h1 class="page3_head">ORIENKO FEATURE</h1><br>
+        <h3 class="page5_subhead">There are so many reasons to choose orienko, here are a few items:</h3><br><hr>
+        <div class="column1">
+            <ul>
+                <li>VALID HTML5 & CSS3</li>
+                <li>2+ FOOTER VARIATION</li>
+                <li>FULLY RESPONSIVE</li>
+                <li>WELL COMMENTED HTML & CSS FILES</li>
+            </ul>
+        </div>
+        <div class="column2">
+            <ul>
+                <li>NEAT, CLEAN AND SIMPLE DESIGN</li>
+                <li>TOTAL 40 HTML PAGES</li>
+                <li>3 HOME PAGES</li>
+                <li>GOOGLE FONTS</li>
+            </ul>
+        </div>
+        <div class="column3">
+            <ul>
+                <li>CREATIVE AND MODERN DESIGN</li>
+                <li>BUILT BASED ON BOOTSTRAP V3</li>
+                <li>CROSS BROWSER OPTIMIZATION</li>
+                <li>WELL DOCUMENTED</li>
+            </ul>
+        </div>
+    </div>
+    <div class="page6">
+        <div class="page6_top">
+            <img class="img_headphone" src="headphone.jpg">
+            <div class="page6_content">
+                <h1 class="page6_head">DEDICATED SUPPORT FORUM</h1><br>
+                <h3 class="page6_subhead">Join the conversation on Support Forum to find solutions, ask questions, and share your ideas.</h3><br>
+                <input class="page6_button" type="button" value="SUPPORT LINK">
+            </div>
+        </div>
+        <div class="page6_bottom">
+            <h4 class="bottom">© 2021 Orienko Made with <a style="text-decoration: none;color: #f8f8f5; text-decoration: solid;" href="">by HasThemes</a></h4>
+        </div>
+    </div>
+</body>
+</html>
